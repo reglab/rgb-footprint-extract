@@ -126,7 +126,7 @@ def filter_buildings_area(buildings_gpd, area_thresh, larger_than=True):
     geod = Geod(ellps="WGS84")
 
     # apply orient() before passing to Geod so that the area is not negative
-    buildings_gpd['area'] = buildings_gpd['geometry'].progress_apply(
+    buildings_gpd['area'] = buildings_gpd['geometry'].apply(
         lambda x: geod.geometry_area_perimeter(orient(x))[0])
 
     if larger_than:
