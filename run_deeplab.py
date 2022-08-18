@@ -19,7 +19,7 @@ def main():
     parser.add_argument('--out-stride', type=int, default=16,
                         help='network output stride (default: 8)')
     parser.add_argument('--dataset', type=str, default='urban3d',
-                        choices=['urban3d', 'spaceNet', 'crowdAI', 'combined', 'OSM', 'combined_naip', 'OSM_split4'],
+                        choices=['urban3d', 'spaceNet', 'crowdAI', 'combined', 'OSM', 'combined_naip', 'OSM_split4', 'OSM_imonly'],
                         help='dataset name (default: urban3d)')
     parser.add_argument('--data-root', type=str, default='/data/',
                         help='datasets root path')
@@ -249,10 +249,13 @@ def handle_multiple_inference(args):
 
     #args.dataset = input_formats[os.path.splitext(args.input_filename)[-1]]
     args.test_batch_size = 1
-    for i in ['train', 'val', 'test']:
-        tester = Tester1(args, i)
+    if args.dataset == 'OSM_imonly':
+        tester = Tester1(args, '') # partition doesn't matter because we're just going to read from args.data_root
+    else:
+        for i in ['train', 'val', 'test']:
+            tester = Tester1(args, i)
 
-        tester.infer_multiple()
+            tester.infer_multiple()
 
 
 def handle_evaluate(args):

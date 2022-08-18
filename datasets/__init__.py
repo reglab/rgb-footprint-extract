@@ -4,6 +4,7 @@ from .SpaceNetDataset import SpaceNetDataset
 from .CombinedDataset import CombinedDataset
 from .NumpyDataset import NumpyDataset
 from .OSMDataset import OSMDataset
+from .OSMDataset_imonly import OSMDataset_imonly
 from .OSMDataset1 import OSMDataset1
 from .CombinedDataset_NAIP import CombinedDataset_NAIP
 import os
@@ -78,6 +79,8 @@ def build_dataloader_partition(args, transforms, partition):
     elif args.dataset == 'OSM_split4':
         return OSMDataset1(os.path.join(args.data_root, partition), None, transforms)
     elif args.dataset == 'combined_naip':
-        train = CombinedDataset_NAIP(data_root, partition, None, transforms)
+        return CombinedDataset_NAIP(data_root, partition, None, transforms)
+    elif args.dataset == 'OSM_imonly':
+        return OSMDataset_imonly(args.data_root, transforms)
     else:
         raise NotImplementedError()
