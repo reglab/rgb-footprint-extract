@@ -144,7 +144,7 @@ oak_fp = args.oak_fp
 year = str(args.year)
 partition = args.partition
 total_images = len(os.listdir(os.path.join(oak_fp, year, 'images')))
-space = total_images/4
+space = int(total_images/4)
 
 start_im = partition*space
 end_im = (partition+1)*space
