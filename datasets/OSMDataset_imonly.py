@@ -23,7 +23,7 @@ class OSMDataset_imonly(Dataset):
         image_filename = self.inputs[index]
 
         # Load image
-        image = np.load(os.path.join(self.root_dir, "images", image_filename))
+        image = np.load(os.path.join(self.root_dir, image_filename))
         image = torch.Tensor(image).permute(2, 0, 1)[None, :3, :, :] ##Converts to 1,C,H,W -- the NAIP imagery is RGBA, so need to index up to 3
 
         # Apply transforms if any
