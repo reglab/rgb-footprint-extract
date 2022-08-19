@@ -251,6 +251,7 @@ def handle_multiple_inference(args):
     args.test_batch_size = 1
     if args.dataset == 'OSM_imonly':
         tester = Tester1(args, '') # partition doesn't matter because we're just going to read from args.data_root
+        tester.infer_multiple()
     else:
         for i in ['train', 'val', 'test']:
             tester = Tester1(args, i)

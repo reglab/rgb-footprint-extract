@@ -79,7 +79,7 @@ def build_dataloader_partition(args, transforms, partition):
     elif args.dataset == 'OSM_split4':
         return OSMDataset1(os.path.join(args.data_root, partition), None, transforms)
     elif args.dataset == 'combined_naip':
-        return CombinedDataset_NAIP(data_root, partition, None, transforms)
+        return CombinedDataset_NAIP(args.data_root, partition, None, transforms)
     elif args.dataset == 'OSM_imonly':
         return OSMDataset_imonly(args.data_root, transforms)
     else:
