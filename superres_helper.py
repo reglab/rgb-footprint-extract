@@ -141,7 +141,7 @@ model.load_weights('./naip_process/weights/edsr-16-x2/weights.h5')
 # year = '2016'
 # oak_fp = '/oak/stanford/groups/deho/building_compliance/san_jose_naip_512/'
 oak_fp = args.oak_fp
-year = args.year
+year = str(args.year)
 partition = args.partition
 total_images = len(os.listdir(os.path.join(oak_fp, year, 'images')))
 space = total_images/4
