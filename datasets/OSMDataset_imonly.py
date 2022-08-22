@@ -12,7 +12,9 @@ class OSMDataset_imonly(Dataset):
         ):
 
         self.root_dir = root_dir
-        self.inputs = list(sorted(os.listdir(self.root_dir)))
+        self.done = set(os.listdir(self.output_dir))
+        self.all = set(os.listdir(self.root_dir))
+        self.inputs = list(self.all - self.done)
         self.transforms = transforms
 
 
