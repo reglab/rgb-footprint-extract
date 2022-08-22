@@ -81,6 +81,6 @@ def build_dataloader_partition(args, transforms, partition):
     elif args.dataset == 'combined_naip':
         return CombinedDataset_NAIP(args.data_root, partition, None, transforms)
     elif args.dataset == 'OSM_imonly':
-        return OSMDataset_imonly(args.data_root, transforms)
+        return OSMDataset_imonly(args, transforms)
     else:
         raise NotImplementedError()

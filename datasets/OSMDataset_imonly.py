@@ -7,13 +7,14 @@ from torch.utils.data import Dataset
 class OSMDataset_imonly(Dataset):
     def __init__(
         self, 
-        root_dir, 
+        args, 
         transforms=None,
         ):
 
-        self.root_dir = root_dir
-        self.done = set(os.listdir(self.output_dir))
-        self.all = set(os.listdir(self.root_dir))
+
+        self.root_dir = args.data_root
+        self.done = set(os.listdir(args.data_root))
+        self.all = set(os.listdir(args.root_dir))
         self.inputs = list(self.all - self.done)
         self.transforms = transforms
 
