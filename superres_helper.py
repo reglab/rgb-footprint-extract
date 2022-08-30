@@ -151,13 +151,30 @@ end_im = (partition+1)*space
 if end_im > total_images:
     end_im = total_images
 
-if not os.path.exists(os.path.join(oak_fp, year, 'imagesx2')):
-    os.mkdir(os.path.join(oak_fp, year, 'imagesx2'))
+if not os.path.exists(os.path.join(oak_fp, year, 'superresx2')):
+    os.mkdir(os.path.join(oak_fp, year, 'superresx2'))
+    os.mkdir(os.path.join(oak_fp, year, 'superresx2', 'images'))
+    os.mkdir(os.path.join(oak_fp, year, 'superresx2', 'masks'))
+    os.mkdir(os.path.join(oak_fp, year, 'superresx2', 'masks_wt'))
 
 for i in tqdm.tqdm(os.listdir(os.path.join(oak_fp, year, 'images'))[start_im:end_im]):
-    if not os.path.exists(os.path.join(oak_fp, year, 'imagesx2', i)):
+    if not os.path.exists(os.path.join(oak_fp, year, 'superresx2', 'images', i)):
+        fn = i.split('.')[0]
         image = np.load(os.path.join(oak_fp, year, 'images', i))
-
+        mask = np.load(os.path.join(oak_fp, year, 'masks', i.replace('.npy', '_mask.npy')))
+        mask_wt = np.load(os.path.join(oak_fp, year, 'masks_wt', i.replace('.npy', '_mask_wt.npy')))
+        
+        dim = (1024, 1024)
+        mask_superres = cv2.resize(mask, dim, interpolation = cv2.INTER_AREA)
+        mask_wt_superres = cv2.resize(mask_wt, dim, interpolation = cv2.INTER_AREA)
+        
         image_superres = resolve_single(model, image[:, :, :3]).numpy()
 
-        np.save(os.path.join(oak_fp, year, 'imagesx2', i), image_superres)
+        np.save(os.path.join(oak_fp, year, 'superresx2', 
+                             'masks', f'{fn}_mask.npy'), mask_superres)
+
+        np.save(os.path.join(oak_fp, year, 'superresx2',
+                             'masks_wt', f'{fn}_mask_wt.npy'), mask_wt_superres)
+
+        np.save(os.path.join(oak_fp, year, 'superresx2',
+                         'images', f'{fn}.npy'), image_superres)

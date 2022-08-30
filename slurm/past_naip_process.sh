@@ -10,5 +10,5 @@
 
 cd ../
 
-singularity exec $GROUP_HOME/singularity/rgb-building1.sif python3 superres_helper.py \
+singularity exec $GROUP_HOME/singularity/rgb-building1.sif python3 past_naip_process.py \
 	--oak-fp=/oak/stanford/groups/deho/building_compliance/ --year=2016
