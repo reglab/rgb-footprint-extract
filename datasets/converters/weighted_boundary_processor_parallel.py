@@ -124,6 +124,18 @@ if __name__ == "__main__":
         processor.process()
 
     """
-    for i in ['train', 'val']:
-        processor = Processor(f"/oak/stanford/groups/deho/building_compliance/san_jose_naip_512/phase2_superresx4/{i}/", 10, 7.5, 150)
-        processor.process()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="DeeplabV3+ And Evaluation")
+
+    # model parameters
+
+    parser.add_argument('--w', type=float)
+    parser.add_argument('--sigma', type=float)
+    parser.add_argument('--window', type=int)
+    parser.add_argument('--oak-fp', type=str)
+
+    args = parser.parse_args()
+
+    processor = Processor(args.oak_fp, args.w, args.sigma, args.window)
+    processor.process()

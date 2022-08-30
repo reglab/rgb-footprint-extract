@@ -10,5 +10,5 @@
 
 cd ../
 
-singularity exec $GROUP_HOME/singularity/rgb-building1.sif python3 datasets/converters/weighted_boundary_processor_parallel.py
-
+singularity exec $GROUP_HOME/singularity/rgb-building1.sif python3 datasets/converters/weighted_boundary_processor_parallel.py --w=10 --sigma=7.5 --window=150 \
+	--oak-fp=/oak/stanford/groups/deho/building_compliance/san_jose_naip_512/2018/
