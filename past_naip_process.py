@@ -74,7 +74,7 @@ def driver(im):
                                      mask=res_zone)
                 
                 if len(df_masks) > 0:
-                    df_masks = gpd.clip(df_masks, res_zone)
+                    df_masks = gpd.clip(df_masks, df['geometry'])
 
                     # there are some buildings that only partially intersect the residneital zones -- filter out
                     df_masks['iou'] = df_masks['geometry'].apply(lambda x: x.intersection(res_zone).area/x.area)
