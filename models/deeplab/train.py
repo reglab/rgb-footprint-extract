@@ -86,11 +86,6 @@ class Trainer(object):
                         dropout_high=args.dropout[1],
                     )
 
-        # train_params = [{'params': model.get_1x_lr_params(), 'lr': args.lr},
-        #                 {'params': model.get_10x_lr_params(), 'lr': args.lr * 10}]
-
-        # train_params = [{'params': model.get_final_lr_params(), 'lr': args.lr},
-        #                 {'params': model.get_0x_lr_params(), 'lr': 0}]
 
         # Define Optimizer
         optimizer = torch.optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum,
@@ -135,11 +130,9 @@ class Trainer(object):
             if os.path.exists(jsonl_fp):
                 # open jsonl 
                 # UNBLOCK THIS TO DO mIOU
-                val_metrics_historical = {'loss': [], 'mIOU': [], 'pixel_acc': [], 'f1': [], 'mIoU-SB': []}
-                # val_metrics_historical = {'loss': [], 'mIOU': [], 'pixel_acc': [], 'f1': []}
-                for buffer in SMALL_BUILDING_BUFFERS:
-                    val_metrics_historical['SmIoU-V1-{}'.format(buffer)] = []
-                    val_metrics_historical['SmIoU-V2-{}'.format(buffer)] = []
+                # val_metrics_historical = {'loss': [], 'mIOU': [], 'pixel_acc': [], 'f1': [], 'mIoU-SB': []}
+                val_metrics_historical = {'loss': [], 'mIOU': [], 'pixel_acc': [], 'f1': []}
+
                 train_metrics_historical = {}
                 times = []
 
@@ -307,8 +300,95 @@ class Trainer(object):
 
         total_time = time.time() - start_time
         self.saver.log_wandb(None, self.curr_step, {"time" : total_time})
-        
+
     def validation(self, epoch):
+        self.model.eval()
+        tbar = tqdm(self.validation_loader)
+        tbar.set_description("[Epoch {}] Validation".format(epoch))
+
+        total_loss = []
+        total_pixelAcc = []
+        total_mIOU = []
+        total_f1 = []
+
+
+        for i, sample in enumerate(tbar):
+            image, mask, loss_weights = sample['image'], sample['mask'].long(), sample['mask_loss']
+            names = sample['name']
+
+            # cuda enable image/mask
+            if self.args.cuda:
+                image, mask, loss_weights = image.cuda(), mask.cuda(), loss_weights.cuda()
+
+            # need to squeeze if combined dataset
+            if self.args.dataset == "combined":
+                image, mask = image.squeeze(), mask.squeeze()
+
+            with torch.no_grad():
+                output = self.model(image)
+
+            if self.args.incl_bounds:
+                boundary_weights = sample['boundary'].to(image.device)
+                loss = self.criterion(output, mask, boundary_weights, loss_weights)
+            else:
+                loss = self.criterion(output, mask)      
+                     
+            total_loss.append(loss.item())
+
+            pred = torch.nn.functional.softmax(output, dim=1)
+            pred = pred.data.cpu().numpy()
+            pred = np.argmax(pred, axis=1)
+
+            target = mask.cpu().numpy()
+
+            total_pixelAcc.append(self.evaluator.pixelAcc_manual(target, pred))
+            total_mIOU.append(self.evaluator.mIOU_manual(target, pred))
+            f1 = self.evaluator.f1score_manual(target, pred)
+            if f1 is not None:
+                total_f1.append(f1)
+            else:
+                total_f1.append(0)
+
+        # Log validation metrics
+        val_metric_dict = {
+            "val_loss": np.mean(total_loss),
+            "val_mIOU": np.mean(total_mIOU),
+            "val_pixel_acc": np.mean(total_pixelAcc),
+            "val_f1": np.mean(total_f1)}
+
+
+        self.saver.log_wandb(epoch, self.curr_step, val_metric_dict)
+
+        # Save checkpoint
+        checkpoint = {
+            'epoch': epoch + 1,
+            'state_dict': self.model.state_dict(),
+            'optimizer': self.optimizer.state_dict()
+        }
+
+        self.saver.save_checkpoint(
+            state=checkpoint, val_metric_dict=val_metric_dict, save=True)
+        # self.saver.save_checkpoint(self.model.state_dict(), np.mean(total_loss), np.mean(total_mIOU))
+
+        # select random image and log it to WandB
+        # filename, image, pred, target = handle_concatenation(
+        #                                                      self.args.dataset == "combined",
+        #                                                      None,
+        #                                                      image,
+        #                                                      pred,
+        #                                                      target,
+        #                                                      names
+        #                                                  )
+
+        #self.saver.log_wandb_image(filename, image, pred, target)
+
+        # Log segmentations in WandB
+        # if self.args.use_wandb:
+        #     wandb.log({'Predictions': wandb_imgs_list})
+
+        self.curr_step += 1
+        
+    def validation1(self, epoch):
         self.model.eval()
         tbar = tqdm(self.validation_loader)
         tbar.set_description("[Epoch {}] Validation".format(epoch))
