@@ -113,6 +113,8 @@ def main():
     parser.add_argument('--owner', type=str, default=None, help='N or A to indicate who\'s running')
     parser.add_argument('--superres', type=int, default=None,
                         help='whether to use the superres imagery or not')
+    parser.add_argument('--year', type=int, default=None,
+                        help='NAIP year for inference')
 
     args = parser.parse_args()
     run_deeplab(args)
@@ -170,8 +172,13 @@ def run_deeplab(args):
         if args.superres is not None:
             args.checkname += f'_superresx{args.superres}'
 
+        if args.year is not None:
+            args.checkname += f'_{args.year}'
+
         if args.checkname_add is not None:
             args.checkname += f'_{args.checkname_add}'
+
+
 
         # if args.checkname_add is None:
         #     if 'los_angeles' in args.data_root:
