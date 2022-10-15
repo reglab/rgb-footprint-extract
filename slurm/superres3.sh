@@ -7,7 +7,6 @@
 #SBATCH --time=04:00:00
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=16GB
-#SBATCH --dependency=afterany:65215125
 
 cd ../
 
