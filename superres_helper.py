@@ -160,6 +160,7 @@ if not os.path.exists(os.path.join(oak_fp, year, 'superresx2')):
 for i in tqdm.tqdm(os.listdir(os.path.join(oak_fp, year, 'images'))[start_im:end_im]):
     if not os.path.exists(os.path.join(oak_fp, year, 'superresx2', 'images', i)):
         fn = i.split('.')[0]
+        print(fn)
         image = np.load(os.path.join(oak_fp, year, 'images', i))
         mask = np.load(os.path.join(oak_fp, year, 'masks', i.replace('.npy', '_mask.npy')))
         mask_wt = np.load(os.path.join(oak_fp, year, 'masks_wt', i.replace('.npy', '_mask_wt.npy')))
