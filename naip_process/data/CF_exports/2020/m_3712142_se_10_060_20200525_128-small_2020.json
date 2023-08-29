@@ -1,0 +1,198 @@
+{
+  "id": "632e6cca9e465e7bd7058078",
+  "datasetId": "632e6c9aff5edd8643bb923f",
+  "url": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e7bd7058078",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+  "createdAt": "2022-09-24T02:34:50.000Z",
+  "dir": "/2020",
+  "filename": "/2020/m_3712142_se_10_060_20200525_128-small_2020.png",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "size": 1505694,
+      "taskStatusLog": [
+        {
+          "status": {
+            "taskId": "6332d9f97eb133cb73af354c",
+            "assignmentId": "6332d9fa7eb133b852af3550",
+            "status": "completed",
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "timestamp": "2022-09-27T13:04:42.281Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "632e91ec7eb1331d49af333f",
+            "assignmentId": "632e91ed7eb13336aeaf3342",
+            "status": "completed",
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "timestamp": "2022-09-27T14:37:03.934Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "63332f3e7eb1336458af3587",
+            "assignmentId": "63332f3e7eb1337b52af3588",
+            "status": "approved",
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "timestamp": "2022-09-27T18:01:17.771Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "6336a0a324e1aadd24e5f4ef",
+            "assignmentId": "6336a0a424e1aafe46e5f4f2",
+            "status": "completed",
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "timestamp": "2022-09-30T14:40:05.521Z"
+          },
+          "action": "created"
+        }
+      ],
+      "mimetype": "image/png",
+      "isBinary": true,
+      "channels": 4,
+      "exif": {},
+      "height": 1175,
+      "thumbnailId": "632e6d4a0d16ff433222d315",
+      "width": 1174,
+      "refs": [
+        {
+          "id": "632e91ec7eb1331d49af333f",
+          "type": "task",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T14:37:03.934Z"
+          }
+        },
+        {
+          "id": "632e91ed7eb13336aeaf3342",
+          "type": "assignment",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T14:37:03.934Z"
+          }
+        },
+        {
+          "id": "6332d9f97eb133cb73af354c",
+          "type": "task",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T13:04:42.281Z"
+          }
+        },
+        {
+          "id": "6332d9fa7eb133b852af3550",
+          "type": "assignment",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T13:04:42.281Z"
+          }
+        },
+        {
+          "id": "63332f3e7eb1336458af3587",
+          "type": "task",
+          "metadata": {
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-27T18:01:17.771Z"
+          }
+        },
+        {
+          "id": "63332f3e7eb1337b52af3588",
+          "type": "assignment",
+          "metadata": {
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-27T18:01:17.771Z"
+          }
+        },
+        {
+          "id": "6336a0a324e1aadd24e5f4ef",
+          "type": "task",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-30T14:40:05.521Z"
+          }
+        },
+        {
+          "id": "6336a0a424e1aafe46e5f4f2",
+          "type": "assignment",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-30T14:40:05.521Z"
+          }
+        },
+        {
+          "id": "6337042fa7ca34d31ad9d4bf",
+          "type": "task"
+        },
+        {
+          "id": "63370430a7ca3447ebd9d4c0",
+          "type": "assignment"
+        }
+      ]
+    },
+    "user": {
+      "coordinates": "37.2966711552795, -121.7855351617548",
+      "image_year": 2020
+    }
+  },
+  "name": "m_3712142_se_10_060_20200525_128-small_2020.png",
+  "creator": "rubiks@dataloop.ai",
+  "stream": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e7bd7058078/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e7bd7058078/thumbnail",
+  "annotations": [
+    {
+      "id": "6332f4e9ed45159d0e7bc034",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e7bd7058078",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332f4e9ed45159d0e7bc034",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e7bd7058078",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "class",
+      "label": "flag/error",
+      "attributes": [],
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "2cb16fdc-c6b6-45d8-b2bf-f385a9919b53",
+          "automated": false,
+          "objectId": "1",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "6332d9f97eb133cb73af354c",
+          "assignmentId": "6332d9fa7eb133b852af3550"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-27T13:04:41.802Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-27T13:04:41.802Z",
+      "hash": "4e7916e6aef82f695aa2197ead7964764af74299",
+      "source": "ui"
+    }
+  ],
+  "annotationsCount": 1,
+  "annotated": true
+}

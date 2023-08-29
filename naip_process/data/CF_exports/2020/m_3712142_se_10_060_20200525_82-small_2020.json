@@ -1,0 +1,508 @@
+{
+  "id": "632e6cca9e465e6308058072",
+  "datasetId": "632e6c9aff5edd8643bb923f",
+  "url": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+  "createdAt": "2022-09-24T02:34:50.000Z",
+  "dir": "/2020",
+  "filename": "/2020/m_3712142_se_10_060_20200525_82-small_2020.png",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "size": 1786913,
+      "taskStatusLog": [
+        {
+          "status": {
+            "taskId": "632e91ec7eb1331d49af333f",
+            "assignmentId": "632e91ed7eb1334452af3341",
+            "status": "completed",
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "timestamp": "2022-09-26T20:20:34.543Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "6332d9662335fd3b124025ac",
+            "assignmentId": "6332d9662335fd52304025ad",
+            "status": "approved",
+            "creator": "jackline.ogutu@es.cloudfactory.com",
+            "timestamp": "2022-09-27T16:30:11.723Z"
+          },
+          "action": "created"
+        }
+      ],
+      "mimetype": "image/png",
+      "isBinary": true,
+      "channels": 4,
+      "exif": {},
+      "height": 1175,
+      "thumbnailId": "632e6d0f6f165b1f02083c57",
+      "width": 1174,
+      "refs": [
+        {
+          "id": "632e91ec7eb1331d49af333f",
+          "type": "task",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-26T20:20:34.543Z"
+          }
+        },
+        {
+          "id": "632e91ed7eb1334452af3341",
+          "type": "assignment",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-26T20:20:34.543Z"
+          }
+        },
+        {
+          "id": "6332d9662335fd3b124025ac",
+          "type": "task",
+          "metadata": {
+            "creator": "jackline.ogutu@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-27T16:30:11.723Z"
+          }
+        },
+        {
+          "id": "6332d9662335fd52304025ad",
+          "type": "assignment",
+          "metadata": {
+            "creator": "jackline.ogutu@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-27T16:30:11.723Z"
+          }
+        },
+        {
+          "id": "6336a0a324e1aadd24e5f4ef",
+          "type": "task"
+        },
+        {
+          "id": "6336a0a324e1aa0830e5f4f1",
+          "type": "assignment"
+        }
+      ]
+    },
+    "user": {
+      "coordinates": "37.3024196875248, -121.8062398280632",
+      "image_year": 2020
+    }
+  },
+  "name": "m_3712142_se_10_060_20200525_82-small_2020.png",
+  "creator": "rubiks@dataloop.ai",
+  "stream": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072/thumbnail",
+  "annotations": [
+    {
+      "id": "63320866534043138aaed14a",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/63320866534043138aaed14a",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 772.3889446553214,
+        "y": 1033.2899957192863,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "8c6fbf90-b085-4f16-af37-b77e155d1105",
+          "automated": false,
+          "objectId": "1",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:15:34.455Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:15:34.455Z",
+      "hash": "5b9dd87d76e058906668e6b4913bfa9a2bac5630",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d0400089f215666",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d0400089f215666",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "building_missed_by_model",
+      "attributes": [],
+      "coordinates": {
+        "x": 601.3407760989026,
+        "y": 839.7709264643793,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "f2296915-242b-47e8-96d2-e380b975ea69",
+          "automated": false,
+          "objectId": "2",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.056Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.056Z",
+      "hash": "b41cee6d6e575d7fedc39798952b09da0faacdf6",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d040049c7215669",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d040049c7215669",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 92.29668644104106,
+        "y": 1149.7953916784277,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "eb0d4091-c3e5-4f0c-964e-d220286299c2",
+          "automated": false,
+          "objectId": "3",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.061Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.061Z",
+      "hash": "e0e8762a3b744ee47eb841f4a30cc27b5d6db62b",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d04004b3e215667",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d04004b3e215667",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 1019.8659141247231,
+        "y": 1154.5035961375809,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "dbee48d6-1cec-4e3e-96a9-0bc896cc10f7",
+          "automated": false,
+          "objectId": "6",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.058Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.058Z",
+      "hash": "2b72bbcc15b2419f9d0ee4f1c9574a8def9fc2ad",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d0400a2a2215668",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d0400a2a2215668",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "building_missed_by_model",
+      "attributes": [],
+      "coordinates": {
+        "x": 426.544071222428,
+        "y": 993.9992315280272,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "37d94cb7-1f7b-47cc-8fb1-087e614f39d2",
+          "automated": false,
+          "objectId": "4",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.060Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.060Z",
+      "hash": "71190b3fbe35878961291e6f20b8e71cd3e8db80",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d040076e621566b",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d040076e621566b",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 311.03063829246025,
+        "y": 1159.3268481010111,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "28e6b905-c711-4bc7-8e17-e83b2a4f5549",
+          "automated": false,
+          "objectId": "7",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.064Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.064Z",
+      "hash": "f0575af6c400f8d33d1aab3e28aedcaba97789be",
+      "source": "ui"
+    },
+    {
+      "id": "6332091b9d040040c921566a",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6332091b9d040040c921566a",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 583.3563876535744,
+        "y": 1152.1104252865248,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "d8c7aab4-34d6-48ee-879e-bdd615687f66",
+          "automated": false,
+          "objectId": "5",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:18:35.063Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:18:35.063Z",
+      "hash": "2cafb31e14b7358431f816462378915a2dc83b5e",
+      "source": "ui"
+    },
+    {
+      "id": "633209725340434898aed16a",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/633209725340434898aed16a",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "model_found_new_building",
+      "attributes": [],
+      "coordinates": {
+        "x": 814.4159197934073,
+        "y": 1132.094246132066,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "4b18c53a-846b-4e2c-bf71-314a41d92be1",
+          "automated": false,
+          "objectId": "8",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:20:02.987Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:20:02.987Z",
+      "hash": "4b5ff8f4a00f76cbfc1cbfed50e3678e22d90671",
+      "source": "ui"
+    },
+    {
+      "id": "63320972534043c193aed169",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465e6308058072",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/63320972534043c193aed169",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465e6308058072",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "point",
+      "label": "building_missed_by_model",
+      "attributes": [],
+      "coordinates": {
+        "x": 759.2597093523722,
+        "y": 1095.9085852967944,
+        "z": 0
+      },
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "4482a236-f1a8-46f4-9cef-6a14a94f9de9",
+          "automated": false,
+          "objectId": "9",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.47.1-prod.3",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "632e91ec7eb1331d49af333f",
+          "assignmentId": "632e91ed7eb1334452af3341",
+          "coordinateVersion": "v1"
+        },
+        "user": {}
+      },
+      "creator": "lewis.kalata@es.cloudfactory.com",
+      "createdAt": "2022-09-26T20:20:02.985Z",
+      "updatedBy": "lewis.kalata@es.cloudfactory.com",
+      "updatedAt": "2022-09-26T20:20:02.985Z",
+      "hash": "418415ed9fcd19711089f2aed69741133c936bde",
+      "source": "ui"
+    }
+  ],
+  "annotationsCount": 9,
+  "annotated": true
+}

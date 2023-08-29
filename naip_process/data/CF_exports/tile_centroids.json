@@ -1,0 +1,161 @@
+{
+  "id": "632e6cca9e465edf330580a3",
+  "datasetId": "632e6c9aff5edd8643bb923f",
+  "url": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465edf330580a3",
+  "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+  "createdAt": "2022-09-24T02:34:50.000Z",
+  "dir": "/",
+  "filename": "/tile_centroids.csv",
+  "type": "file",
+  "hidden": false,
+  "metadata": {
+    "system": {
+      "size": 11804,
+      "taskStatusLog": [
+        {
+          "status": {
+            "taskId": "6332d9f97eb133cb73af354c",
+            "assignmentId": "6332d9fa7eb133b852af3550",
+            "status": "completed",
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "timestamp": "2022-09-27T13:25:09.464Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "6336a0a324e1aadd24e5f4ef",
+            "assignmentId": "6336a0a424e1aa5616e5f4f3",
+            "status": "completed",
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "timestamp": "2022-09-30T12:52:16.495Z"
+          },
+          "action": "created"
+        },
+        {
+          "status": {
+            "taskId": "6336fef9a7ca340792d9d39f",
+            "assignmentId": "6336fefaa7ca3477a6d9d3a0",
+            "status": "approved",
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "timestamp": "2022-09-30T15:18:43.794Z"
+          },
+          "action": "created"
+        }
+      ],
+      "mimetype": "text/csv",
+      "isBinary": false,
+      "refs": [
+        {
+          "id": "632e91ec7eb1331d49af333f",
+          "type": "task"
+        },
+        {
+          "id": "632e91ed7eb1335101af3343",
+          "type": "assignment"
+        },
+        {
+          "id": "6332d9f97eb133cb73af354c",
+          "type": "task",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T13:25:09.464Z"
+          }
+        },
+        {
+          "id": "6332d9fa7eb133b852af3550",
+          "type": "assignment",
+          "metadata": {
+            "creator": "lewis.kalata@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-27T13:25:09.464Z"
+          }
+        },
+        {
+          "id": "6336a0a324e1aadd24e5f4ef",
+          "type": "task",
+          "metadata": {
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-30T12:52:16.495Z"
+          }
+        },
+        {
+          "id": "6336a0a424e1aa5616e5f4f3",
+          "type": "assignment",
+          "metadata": {
+            "creator": "nyambe.mwangelwa@es.cloudfactory.com",
+            "status": "completed",
+            "timestamp": "2022-09-30T12:52:16.495Z"
+          }
+        },
+        {
+          "id": "6336fef9a7ca340792d9d39f",
+          "type": "task",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-30T15:18:43.794Z"
+          }
+        },
+        {
+          "id": "6336fefaa7ca3477a6d9d3a0",
+          "type": "assignment",
+          "metadata": {
+            "creator": "grace.odemba@es.cloudfactory.com",
+            "status": "approved",
+            "timestamp": "2022-09-30T15:18:43.794Z"
+          }
+        }
+      ]
+    }
+  },
+  "name": "tile_centroids.csv",
+  "creator": "rubiks@dataloop.ai",
+  "stream": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465edf330580a3/stream",
+  "thumbnail": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465edf330580a3/thumbnail",
+  "annotations": [
+    {
+      "id": "6337086dc57ba4555034e6f0",
+      "datasetId": "632e6c9aff5edd8643bb923f",
+      "itemId": "632e6cca9e465edf330580a3",
+      "url": "https://gate.dataloop.ai/api/v1/annotations/6337086dc57ba4555034e6f0",
+      "item": "https://gate.dataloop.ai/api/v1/items/632e6cca9e465edf330580a3",
+      "dataset": "https://gate.dataloop.ai/api/v1/datasets/632e6c9aff5edd8643bb923f",
+      "type": "class",
+      "label": "flag/error",
+      "attributes": [],
+      "metadata": {
+        "system": {
+          "startTime": 0,
+          "endTime": 0,
+          "frame": 0,
+          "endFrame": 0,
+          "snapshots_": [],
+          "clientId": "69f38f43-695b-4a03-94bc-58f396a2d3a6",
+          "automated": false,
+          "objectId": "1",
+          "isOpen": false,
+          "isOnlyLocal": false,
+          "attributes": {},
+          "system": false,
+          "itemLinks": [],
+          "openAnnotationVersion": "1.48.2-rc.82",
+          "recipeId": "632e6c9b433d0b508cde9dbc",
+          "taskId": "6336fef9a7ca340792d9d39f",
+          "assignmentId": "6336fefaa7ca3477a6d9d3a0"
+        },
+        "user": {}
+      },
+      "creator": "grace.odemba@es.cloudfactory.com",
+      "createdAt": "2022-09-30T15:17:01.233Z",
+      "updatedBy": "grace.odemba@es.cloudfactory.com",
+      "updatedAt": "2022-09-30T15:17:01.233Z",
+      "hash": "d4ace261cc20fdaf68cde16235dcb810b9a754ba",
+      "source": "ui"
+    }
+  ],
+  "annotationsCount": 1,
+  "annotated": true
+}
